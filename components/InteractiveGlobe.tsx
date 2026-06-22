@@ -276,9 +276,67 @@ export function InteractiveGlobe() {
                     }`}
                 />
               ) : null}
-              <h2 className="text-base font-black leading-tight text-ink sm:text-lg">
-                {drink.category}
-              </h2>
+              {drink.category === "Mojito" ? (
+                <img
+                  src="/img/莫吉托标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Negroni" ? (
+                <img
+                  src="/img/尼格罗尼标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Margarita" ? (
+                <img
+                  src="/img/玛格丽特标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Whisky Sour" ? (
+                <img
+                  src="/img/威士忌酸标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Umeshu Highball" ? (
+                <img
+                  src="/img/梅子Highball标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Long Island Iced Tea" ? (
+                <img
+                  src="/img/长岛冰茶标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-2/3 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Gin Tonic" ? (
+                <img
+                  src="/img/金汤力标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : drink.category === "Aperol Spritz" ? (
+                <img
+                  src="/img/阿佩罗橙光标题.jpg"
+                  alt={drink.category}
+                  className="inline-block h-auto w-5/6 max-w-[160px] sm:max-w-[200px]"
+                  draggable={false}
+                />
+              ) : (
+                <h2 className="text-base font-black leading-tight text-ink sm:text-lg">
+                  {drink.category}
+                </h2>
+              )}
               <p className="mt-2">{drink.caption}</p>
             </motion.article>
           );
@@ -337,15 +395,76 @@ export function InteractiveGlobe() {
                 </aside>
 
                 <section className="p-6 pr-14 sm:p-8 sm:pr-16">
-                  <h2 className="mt-3 text-4xl font-black leading-none text-ink">
-                    {expandedDrink.name}
-                  </h2>
-                  <p
-                    className="mt-2 text-3xl leading-none text-sky-600"
-                    style={{ fontFamily: "'Snell Roundhand', 'Brush Script MT', cursive" }}
-                  >
-                    {expandedDrink.category}
-                  </p>
+                  <div className="mt-3 grid grid-cols-1 sm:grid-cols-[auto_1fr] sm:items-center sm:gap-6">
+                    <div className="flex-shrink-0">
+                      {expandedDrink.category === "Mojito" || expandedDrink.name === "莫吉托" ? (
+                        <img
+                          src="/img/莫吉托标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-2/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Negroni" || expandedDrink.name === "尼格罗尼" ? (
+                        <img
+                          src="/img/尼格罗尼标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-1/2 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Margarita" || expandedDrink.name === "玛格丽特" ? (
+                        <img
+                          src="/img/玛格丽特标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-3/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Long Island Iced Tea" || expandedDrink.name === "长岛冰茶" ? (
+                        <img
+                          src="/img/长岛冰茶标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-4/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Aperol Spritz" || expandedDrink.name === "阿佩罗 Spritz" ? (
+                        <img
+                          src="/img/阿佩罗橙光标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-4/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Gin Tonic" || expandedDrink.name === "金汤力" ? (
+                        <img
+                          src="/img/金汤力标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-1/2 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Whisky Sour" || expandedDrink.name === "威士忌酸" ? (
+                        <img
+                          src="/img/威士忌酸标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-3/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : expandedDrink.category === "Umeshu Highball" || expandedDrink.name === "梅子 Highball" ? (
+                        <img
+                          src="/img/梅子Highball标题.jpg"
+                          alt={expandedDrink.name}
+                          className="h-auto max-w-[360px] w-4/5 sm:max-w-[480px]"
+                          draggable={false}
+                        />
+                      ) : (
+                        <h2 className="text-4xl font-black leading-none text-ink">{expandedDrink.name}</h2>
+                      )}
+                    </div>
+
+                    <p
+                      className="mt-3 text-3xl leading-none text-sky-600 sm:mt-0 whitespace-nowrap justify-self-end pr-5"
+                      style={{ fontFamily: "'Snell Roundhand', 'Brush Script MT', cursive" }}
+                    >
+                      {expandedDrink.category}
+                    </p>
+                  </div>
 
                   <blockquote className="mt-6 border-l-4 border-sky-300 bg-sky-50 px-5 py-4 text-base font-bold leading-8 text-ink">
                     {expandedDrink.quote}

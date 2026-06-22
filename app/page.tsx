@@ -9,12 +9,13 @@ export default function HomePage() {
         <header className="flex items-start justify-between gap-4">
           <div className="flex items-start gap-4 flex-1 min-w-0">
             <div className="min-w-0">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
+              {/* <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
                 Be yourself, be unique, be free.
-              </p>
-              <h1 className="mt-2 max-w-3xl text-3xl font-black leading-tight text-ink sm:text-5xl">
+              </p> */}
+              {/* <h1 className="mt-2 max-w-3xl text-3xl font-black leading-tight text-ink sm:text-5xl">
                 Drink&Chill
-              </h1>
+              </h1> */}
+              <img src="/img/首页标题.jpg" alt="" className="w-3/4" />
             </div>
 
             <div className="ml-4 shrink-0 w-[min(640px,48vw)]">

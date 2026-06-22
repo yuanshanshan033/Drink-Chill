@@ -9,7 +9,12 @@ export default function RecommendationsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
               Recommend
             </p>
-            <h1 className="mt-2 text-3xl font-black text-ink sm:text-4xl">推荐</h1>
+            <img
+              src="/img/推荐标题.jpg"
+              alt="推荐"
+              className="inline-block h-auto w-1/2 max-w-[360px] sm:max-w-[480px]"
+              draggable={false}
+            />
           </div>
           <p className="max-w-xl text-sm leading-6 text-slate-500">
             支持心情、目标口味、季节和新品维度。每个推荐都附带材料与制作过程，方便直接复刻。

@@ -8,7 +8,12 @@ export default function CategoriesPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
             Classify
           </p>
-          <h1 className="mt-2 text-3xl font-black text-ink sm:text-4xl">分类</h1>
+          <img
+            src="/img/分类标题.jpg"
+            alt="分类"
+            className="inline-block h-auto w-40 max-w-[360px] sm:max-w-[480px]"
+            draggable={false}
+          />
         </div>
         <CategoryExplorer />
       </section>

@@ -25,7 +25,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen lg:pl-[88px]">
-      <aside className="fixed inset-x-3 bottom-3 z-40 rounded-2xl border border-slate-200 bg-white/95 px-3 py-2 shadow-soft backdrop-blur lg:inset-y-4 lg:left-4 lg:right-auto lg:w-[64px] lg:rounded-[28px] lg:px-2 lg:py-4">
+      <aside className="fixed inset-x-3 bottom-3 z-40 rounded-none border-r border-black border-solid bg-white/95 px-3 py-2 shadow-soft backdrop-blur lg:inset-y-4 lg:left-4 lg:right-auto lg:w-[64px] lg:rounded-none lg:border-r lg:px-2 lg:py-4">
         <nav className="flex items-center justify-between gap-1 lg:h-full lg:flex-col lg:justify-start lg:gap-3">
           <Link
             href="/"

@@ -70,7 +70,7 @@ export function MoodInput({ compact = false }: { compact?: boolean }) {
   return (
     <div
       ref={containerRef}
-      className={`relative z-50 rounded-[26px] border border-slate-200 bg-white/94 p-3 shadow-soft backdrop-blur ${compact ? "" : "p-5"
+      className={`relative z-50 rounded-none border border-black border-solid bg-white/94 p-3 shadow-soft backdrop-blur ${compact ? "" : "p-5"
         }`}
     >
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center">

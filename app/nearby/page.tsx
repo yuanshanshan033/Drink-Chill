@@ -9,7 +9,12 @@ export default function NearbyPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
               Nearby
             </p>
-            <h1 className="mt-2 text-3xl font-black text-ink sm:text-4xl">附近</h1>
+            <img
+              src="/img/附近标题.jpg"
+              alt="附近"
+              className="inline-block h-auto w-1/2 max-w-[360px] sm:max-w-[480px]"
+              draggable={false}
+            />
           </div>
           <p className="max-w-xl text-sm leading-6 text-slate-500">
             当前位置只在浏览器中使用。可先查看示例酒吧和便利店点位，后续接入真实 POI 服务。
