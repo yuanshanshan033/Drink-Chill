@@ -22,8 +22,8 @@ export function RecommendationWorkbench() {
   }, [activeTag, season]);
 
   return (
-    <div className="grid gap-5 xl:grid-cols-[0.8fr_1.2fr]">
-      <div className="space-y-5">
+    <div className="grid items-start gap-5 xl:grid-cols-[0.8fr_1.2fr]">
+      <div className="space-y-5 xl:sticky xl:top-[153px] xl:self-start">
         <MoodInput />
         <div className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="inline-flex items-center gap-2 text-lg font-black text-ink">

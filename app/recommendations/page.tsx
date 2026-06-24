@@ -4,7 +4,7 @@ export default function RecommendationsPage() {
   return (
     <main className="min-h-screen px-4 py-6 sm:px-6 lg:px-8">
       <section className="mx-auto max-w-7xl">
-        <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-4 xl:sticky xl:top-0 xl:z-30 xl:-mt-6 xl:mb-0 xl:h-[153px] xl:bg-white xl:pb-6 xl:pt-6">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-500">
               Recommend
